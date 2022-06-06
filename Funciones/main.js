@@ -69,3 +69,70 @@ function cambiarValorPersona(p1){
 cambiarValorPersona(persona);
 console.log(persona)
 
+
+//
+const saludar = function (nombre){
+
+    return 'Hola, ' + nombre;
+}
+
+console.log(saludar('PEPE'));
+
+
+const saludar2 = (nombre) =>{
+
+    return 'Hola, ' + nombre;
+}
+const saludar3 = (nombre) => 'Hola, ' + nombre;
+
+const saludar4 = () => 'Hola, PEPE' ;
+console.log(saludar2('PEPE'));
+console.log(saludar3('PEPE'));
+console.log(saludar4('PEPE'));
+
+const getUser = () =>{
+    return{
+        uid: 'ABCD123',
+        username : 'EL GOKU_145'
+    }
+}
+
+const getUser2 = () =>(
+    {
+        uid: 'ABCD123',
+        username : 'EL GOKU_145'
+    })
+
+
+console.log(getUser() )
+console.log(getUser2() )
+
+
+
+
+function getUsuarioActivo (nombre) {
+
+    return {
+        uid: 'ABC678',
+        username: nombre
+    }
+};
+const activo = getUsuarioActivo('Alberto');
+console.log(activo);
+
+
+const usuarioFlecha = () => {
+    return {
+        uid: '123salsa',
+        username: 'EL LUCAS03'
+    }
+};
+
+const usuarioFlecha2 = (nombre) => ({
+    
+        uid: '123salsa',
+        username: nombre
+    
+})
+console.log(usuarioFlecha() );
+console.log(usuarioFlecha2('PEPE') );
