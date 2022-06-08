@@ -32,4 +32,3 @@ const getUser = () => ({
 const user = getUser();
 console.log(getUser());
 console.log(user);
-
