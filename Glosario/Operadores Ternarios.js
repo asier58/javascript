@@ -1,5 +1,4 @@
 
-
 const activo = true;
 
 let mensaje = '';
